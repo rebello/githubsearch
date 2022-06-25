@@ -1,0 +1,29 @@
+header {
+    background: white;
+    display: block;
+    border: 1px solid #e6e6e6;
+    padding: 1%;
+    clear: both;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            float: left;
+        }
+      }
+
+    .home-link {
+        line-height: 30px;
+        display: block;
+        margin-left: 20%;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+            color: #e3e5e6;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}

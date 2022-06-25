@@ -1,0 +1,26 @@
+<div class="card-container-main">
+    <div class="card-container auto" *ngIf="this.name">
+        <img class="round" src={{profileDetails.avatar_url}}  alt="user" />
+        <h3>{{profileDetails.name}}</h3>
+        <p>{{profileDetails.bio}}</p>
+        <button class="primary ghost"   (click)="nav($event,profileDetails.html_url)">
+            Visit
+        </button>
+        <!-- href="{{profileDetails.html_url}}" -->
+    </div>
+    <div class="card-container-history clearfix" *ngIf="!this.name">
+        <h3>History </h3>
+        <button class="primary ghost" (click)="clear($event)">
+            Clear
+        </button>
+        <br>
+        <div class="card-container left" *ngFor="let item of historyObj">
+            <img class="round" src={{item.avatar_url}}  alt="user" />
+            <h3>{{item.name}}</h3>
+            <p>{{item.bio}}</p>
+            <button class="primary ghost"  target="_blank" (click)="nav($event,item.html_url)">
+                Visit
+            </button>
+        </div>
+    </div>
+</div>

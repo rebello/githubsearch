@@ -1,0 +1,31 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 10%);
+    width: 100%;
+    margin-bottom: 10px;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+    }
+    .name {
+        margin-bottom: 20px;
+    }
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    img {
+        border-radius: 50%;
+        width: 50px;
+    }
+   
+}
+
+.list-items {
+    margin-top: 10px;
+}

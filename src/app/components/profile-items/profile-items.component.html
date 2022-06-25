@@ -1,0 +1,10 @@
+<div class="list-items">
+    <ul>
+        <li class="item" *ngFor="let user of userList;">
+            <div class="avatar" [routerLink]="['/profile']"  [queryParams]="{username: user.login}">
+                <img src={{user.avatar_url}} alt="">
+                <div class="name">@{{user.login}}</div>
+            </div>
+        </li>
+    </ul>
+</div>

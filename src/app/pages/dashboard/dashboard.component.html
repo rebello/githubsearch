@@ -1,0 +1,20 @@
+<!-- <p>dashboard works!</p>
+<app-search-bar></app-search-bar>
+<app-profile-items></app-profile-items> -->
+<div class="dashboard-container ">
+    <div class="dashboard-body">
+        <!-- //scope of improvement -->
+        <ul class="clearfix">
+            <li>
+                <div class="box" [routerLink]="['search']">
+                    search
+                </div>
+            </li>
+            <li>
+                <div class="box" [routerLink]="['profile']">
+                    History
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
